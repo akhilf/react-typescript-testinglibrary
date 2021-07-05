@@ -11,8 +11,8 @@ const titleStyle = css`
 
 const Home: React.FC<RouteComponentProps> = (): JSX.Element => {
   return (
-    <section>
-      <h1 className={titleStyle}>Welcome!</h1>
+    <section data-testid='home-page'>
+      <h1 className={titleStyle} data-testid='header'>Welcome!</h1>
       <Link to="/about">Go to about</Link>
 
       <ErrorBoundary>
